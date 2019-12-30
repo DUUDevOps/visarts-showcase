@@ -36,7 +36,6 @@ class VotingMain extends React.Component{
         voterRef.on('value', (snapshot) => console.log("VOTE", snapshot.val()));
         
         submissionsRef.on('value', (snapshot) => {
-            this.setState(initialState);
             let submissions = snapshot.val();
             let newState = [];
             let unvotedState = [];
@@ -129,8 +128,8 @@ class VotingMain extends React.Component{
     render(){
         return(
             <div>
-                <h1>Hello, {this.currentUser.displayName}. Please vote on the following submissions.</h1>
-                <ul>
+                <h3>Hello, {this.currentUser.displayName}! Please submit a vote on the following {this.state.unvotedSubmissions.length} submissions.</h3>
+                {/* <ul>
                     {this.state.submissions.map((submission) => {
                         return(
                             <li key={submission.id}>
@@ -140,7 +139,7 @@ class VotingMain extends React.Component{
                             </li>
                         )
                     })}
-                </ul>
+                </ul> */}
                 {
                     this.state.currentSubmission
                     ?

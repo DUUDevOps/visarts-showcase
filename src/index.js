@@ -3,6 +3,17 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
 import * as serviceWorker from './serviceWorker';
+import VotingSignIn from './Components/VotingSignIn';
+import { Route, Link, BrowserRouter as Router } from 'react-router-dom';
+
+// const routing = (
+//     <Router>
+//       <div>
+//         <Route path="/" component={App} />
+//         <Route path="/voting" component={VotingSignIn} />
+//       </div>
+//     </Router>
+//   )
 
 ReactDOM.render(<App />, document.getElementById('root'));
 
