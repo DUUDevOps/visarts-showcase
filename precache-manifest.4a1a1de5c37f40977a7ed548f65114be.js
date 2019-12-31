@@ -1,6 +1,6 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "f4afc81d6b3fbfdd437c9d964d611cdb",
+    "revision": "81ef2fb839daa1b9a09d76215e2a9097",
     "url": "/visarts-showcase/index.html"
   },
   {
@@ -8,8 +8,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/visarts-showcase/static/css/2.17e5ed98.chunk.css"
   },
   {
-    "revision": "dfe35047a8216cbd91d7",
-    "url": "/visarts-showcase/static/css/main.c36741c6.chunk.css"
+    "revision": "41024ecd07f373b16dec",
+    "url": "/visarts-showcase/static/css/main.867aac3d.chunk.css"
   },
   {
     "revision": "2d98ca7f2fcfde0e9862",
@@ -20,8 +20,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/visarts-showcase/static/js/2.8a509500.chunk.js.LICENSE"
   },
   {
-    "revision": "dfe35047a8216cbd91d7",
-    "url": "/visarts-showcase/static/js/main.d535d492.chunk.js"
+    "revision": "41024ecd07f373b16dec",
+    "url": "/visarts-showcase/static/js/main.0fe019cf.chunk.js"
   },
   {
     "revision": "99ac2a5b96324b4d8e5f",
