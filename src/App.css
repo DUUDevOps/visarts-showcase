@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css?family=Karla&display=swap');
 .App {
   text-align: center;
 }
@@ -35,4 +36,55 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+.submissionForm {
+  margin: auto;
+  width: 60%;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  border-radius: 10px;
+  background-color: white;
+  font-weight: bold;
+  
+}
+
+.form {
+  padding-left: 15%;
+  padding-right: 15%;
+  padding-top: 5%;
+  padding-bottom: 5%;
+
+}
+
+.App-style{
+  font-family: 'Karla', sans-serif;
+  font-style: bold;
+  background-color:#e9e9f0; 
+}
+.inline{
+  display: flex;
+  justify-content: space-between;
+  padding: 1%;
+}
+
+.containerVoting{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+
+.centerPage {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+}
+
+.imageCenter{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: auto;
 }

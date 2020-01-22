@@ -1,27 +1,25 @@
 import React from 'react';
 import './App.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import { Route, Link, BrowserRouter as Router } from 'react-router-dom';
+import { HashRouter, Route, Link } from 'react-router-dom';
 import SubmissionForm from './Components/SubmissionForm';
 import VotingSignIn from './Components/VotingSignIn';
+import AdminSignIn from './Components/AdminSignIn';
 
 
 
 function App() {
   return (
-    <div>
-      <header>VisArts Spring 2020 Showcase Submission</header>
+    // <div className="App-style">
 
-      <Router>
-        <div>
+      <HashRouter basename='/' className="App-style">
           <Route exact path="/" component={SubmissionForm} />
           <Route path="/voting" component={VotingSignIn} />
-        </div>
-        
-      </Router>
+          <Route path="/admin" component={AdminSignIn} />
+      </HashRouter>
 
 
-    </div>
+    // </div>
   );
 }
 

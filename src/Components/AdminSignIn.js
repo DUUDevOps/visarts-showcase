@@ -1,5 +1,5 @@
 import React from 'react';
-import VotingMain from './VotingMain';
+import AdminMain from './AdminMain';
 
 import firebase from 'firebase/app';
 import 'firebase/auth';
@@ -15,12 +15,12 @@ const providers = {
 };
 
 
-class VotingSignIn extends React.Component {
+class AdminSignIn extends React.Component {
     render(){
         const {user, signOut, signInWithGoogle} = this.props;
         return(
             <div>
-    <h2 align="center"><b>VisArts Spring {new Date().getFullYear()} Showcase Voting</b></h2>
+                <h2 align="center"><b>VisArts Spring Showcase Admin</b></h2>
 
                 {
                 user ?
@@ -35,12 +35,12 @@ class VotingSignIn extends React.Component {
                     user 
                     ?
                     <div>
-                        <VotingMain user={user}/>
+                        <AdminMain user={user}/>
                     </div>
                     : 
                     (
                         <div className="centerPage">
-                        <h5>For VisArts Committee Members only - please sign in to vote.</h5> 
+                        <h5>For VisArts Committee Chair only - please sign in.</h5> 
                         <Button outline color="primary" onClick={signInWithGoogle}>Sign in with Google</Button>
                         </div>
                     )   
@@ -61,4 +61,4 @@ class VotingSignIn extends React.Component {
 export default withFirebaseAuth({
     providers,
     firebaseAppAuth
-})(VotingSignIn);
+})(AdminSignIn);
